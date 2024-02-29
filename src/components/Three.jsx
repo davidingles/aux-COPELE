@@ -5,17 +5,9 @@ import { Stats, OrbitControls, Environment, useGLTF, Clone, Html, ContactShadows
 import { useControls } from 'leva'
 
 const Models = [
-  // { title: 'Hammer', url: './models/hammer.glb' },
-  // { title: 'cajaSeparadorRemesh', url: './gltf/cajaSeparadorRemesh.glb' },
-  // { title: 'cajaSeparadorRemesh2', url: './gltf/cajaSeparadorRemesh2.glb' },
-  // { title: 'troquel4e0067_glb', url: './gltf/troquel4e0067_glb.glb' },
-  // { title: 'CajaSeparador', url: './gltf/CajaSeparador.glb' },
-  // { title: 'jamoneroMacondo2', url: './gltf/jamoneroMacondo2.glb' },
-  // { title: 'jamoneroMacondo2', url: './gltf/jamoneroMacondo2.glb' },
-  // { title: 'INPACKET1', url: './INPACKET1.glb', miEscala: .5, miPosicion: 0.1 },
-  // { title: 'INPACKET', url: './INPACKET.glb', miEscala: .7, miPosicion: -0.0 },
-  { title: '20KG', url: './1G0226.glb', miEscala: .7, miPosicion: -0.0 },
-  { title: 'KIT', url: './1G0227.glb', miEscala: .7, miPosicion: -0.0 },
+
+  { title: '20KG', url: './1G0231.glb', miEscala: .7, miPosicion: -0.4 },
+  { title: 'KIT3', url: './1G0230.glb', miEscala: .7, miPosicion: -0.2 },
 ]
 
 function Model({ url, miEscala, miPosicion }) {
@@ -29,9 +21,6 @@ function Model({ url, miEscala, miPosicion }) {
   const group = useRef()
   useFrame((state) => {
     const t = state.clock.getElapsedTime()
-    // group.current.rotation.x = THREE.MathUtils.lerp(group.current.rotation.x, Math.cos(t / 4) / 20 + 0.25, 0.1)
-    // group.current.rotation.y = THREE.MathUtils.lerp(group.current.rotation.y, Math.sin(t / 8) / 10, 0.1)
-    // group.current.rotation.z = THREE.MathUtils.lerp(group.current.rotation.z, Math.sin(t / 8) / 20, 0.1)
     group.current.position.y = miPosicion
     group.current.position.y = THREE.MathUtils.lerp(group.current.position.y, (-2 + Math.sin(t)) / 90, 0.6)
   })
