@@ -12,9 +12,10 @@ const Models = [
   // { title: 'CajaSeparador', url: './gltf/CajaSeparador.glb' },
   // { title: 'jamoneroMacondo2', url: './gltf/jamoneroMacondo2.glb' },
   // { title: 'jamoneroMacondo2', url: './gltf/jamoneroMacondo2.glb' },
-  { title: 'INPACKET1', url: './INPACKET1.glb', miEscala: .5, miPosicion: 0.1 },
-  { title: 'INPACKET', url: './INPACKET.glb', miEscala: .7, miPosicion: -0.0 },
+  // { title: 'INPACKET1', url: './INPACKET1.glb', miEscala: .5, miPosicion: 0.1 },
+  // { title: 'INPACKET', url: './INPACKET.glb', miEscala: .7, miPosicion: -0.0 },
   { title: '20KG', url: './1G0226.glb', miEscala: .7, miPosicion: -0.0 },
+  { title: 'KIT', url: './1G0227.glb', miEscala: .7, miPosicion: -0.0 },
 ]
 
 function Model({ url, miEscala, miPosicion }) {
